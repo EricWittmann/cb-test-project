@@ -13,6 +13,7 @@ import { ResponsiveTableDemo } from "./demos/ResponsiveTableDemo.tsx";
 import { ToggleIconDemo } from "./demos/ToggleIconDemo.tsx";
 import { DateTimeDemo } from "./demos/DateTimeDemo.tsx";
 import { ChipFilterDemo } from "./demos/ChipFilterDemo.tsx";
+import { ButtonDemo } from "./demos/ButtonDemo.tsx";
 
 export type Demo = {
     name: string;
@@ -26,6 +27,11 @@ export type Demos = {
 
 export const ALL_DEMOS: Demos = {
     "Common Types": [
+        {
+            name: "Button",
+            description: "A wrapper around PatternFly's Button component with support for icon-only buttons and proper ARIA labels.",
+            component: <ButtonDemo/>
+        },
         {
             name: "DateTime",
             description: "Component to display a string or Date object in a UI, with different formatting options.",
